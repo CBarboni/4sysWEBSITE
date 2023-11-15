@@ -1,11 +1,196 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4Sys</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="index.js"></script>
+  <link href="main.css" rel="stylesheet" type="text/css">
 </head>
-<body>
-    
-</body>
-</html>
+<body class="pagina1">
+
+<nav class="navbar navbar-expand-md fixed-top">
+  <a href="main.html">
+    <img src="imagens/logo-4sys-sistemas.png" class="logoinicial" alt="Logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="main.html" class="nav-link paginainicial">Página Inicial</a>
+      </li>
+      <li class="nav-item">
+        <a href="contato.html" class="nav-link contato">Contato</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEmpresa" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Empresa
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownEmpresa">
+          <a class="dropdown-item" href="#">Sobre Nós</a>
+          <a class="dropdown-item" href="#">Clientes</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProdutos" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Produtos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownProdutos">
+          <a class="dropdown-item" href="#">Cleber</a>
+          <a class="dropdown-item" href="#">Gleison</a>
+          <a class="dropdown-item" href="#">opcao3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="contato.html" class="nav-link contato">Serviços</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="/imagens/banner1.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Hardware GTON</h5>
+          <p>O GTON é um Gateway extremamente versátil com comunicação Serial, Ethernet, Modem 3G e Rádio 900Mhz.</p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="/imagens/banner2.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>NOSSOS SERVIÇOS</h5>
+          <p>CONHEÇA TODOS OS SERVIÇOS QUE PODEMOS OFERECER</p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="imagens/banner3.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>TECNOLOGIA 100% NACIONAL</h5>
+          <p>4Sys Sistemas: empresa que engloba conceitos ciber-fisicos e de automação, beneficiando a todos com o aumento da competitividade e eficiência</p>
+          <a href="#" class="btn btn-primary">Saiba mais</a>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div>
+
+
+  <div class="container mt-5">
+    <div class="row">
+      <!-- Cards superiores -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/imagens/ic-automotivo.png" class="card-img-top" alt="Imagem 1">
+          <div class="card-body">
+            <h5 class="card-title">Automotivo</h5>
+            <!-- <p class="card-text">Descrição do card 1.</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/imagens/ic-cervejaria.png" class="card-img-top" alt="Imagem 2">
+          <div class="card-body">
+            <h5 class="card-title">Cervejaria</h5>
+            <!-- <p class="card-text">Descrição do card 2.</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="imagens/ic-farmaceutica.png" class="card-img-top" alt="Imagem 3">
+          <div class="card-body">
+            <h5 class="card-title">Farmaceutica</h5>
+            <!-- <p class="card-text">Descrição do card 3.</p> -->
+          </div>
+        </div>
+      </div>
+      <!-- Cards inferiores -->
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/imagens/ic-metalurgica.png" class="card-img-top" alt="Imagem 4">
+          <div class="card-body">
+            <h5 class="card-title">Metalurgica</h5>
+            <!-- <p class="card-text">Descrição do card 4.</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/imagens/ic-quimica.png" class="card-img-top" alt="Imagem 5">
+          <div class="card-body">
+            <h5 class="card-title">Química</h5>
+            <!-- <p class="card-text">Descrição do card 5.</p> -->
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <img src="/imagens/ic-textil.png" class="card-img-top" alt="Imagem 6">
+          <div class="card-body">
+            <h5 class="card-title">Textíl</h5>
+            <!-- <p class="card-text">Descrição do card 6.</p> -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- Adicione esta parte no final do corpo da sua página -->
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Siga-nos:</h5>
+          <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+        </div>
+        <div class="col-md-6">
+          <h5>Contato:</h5>
+          <p><i class="bi bi-telephone"></i> 1999999-9999</p>
+          <p><i class="bi bi-envelope"></i> atendimento@4syssistemas.com.br</p>
+        </div>
+        <div class="col-md-6">
+            <img src="/imagens/logo-4sys-sistemas-white.png" alt="logofooter">
+          </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <p><a href="#">Termos e Condições</a> | <a href="#">Política de Privacidade</a> | <a href="">4Sys - Automação Industrial Indaiatuba © 2023 Todos os direitos reservados</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+
+
+
+   </body>
+   
+   </html>
+   
