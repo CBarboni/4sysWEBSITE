@@ -21,3 +21,23 @@
 //     });
 //   });
   
+
+// $(document).ready(function () {
+//     $(".owl-carousel").owlCarousel({
+//       items: 3, // Mostra 3 itens por vez
+//       loop: true,
+//       margin: 20, // Ajuste o espaço entre os itens conforme necessário
+//       nav: true,
+//       responsive: {
+//         0: {
+//           items: 1
+//         },
+//         600: {
+//           items: 2
+//         },
+//         768: {
+//           items: 3
+//         }
+//       }
+//     });
+//   });
