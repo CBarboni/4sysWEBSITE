@@ -41,3 +41,24 @@
 //       }
 //     });
 //   });
+
+$(document).ready(function(){
+    setInterval(function(){
+      // Calcula o próximo valor de rotação da barra de rolagem
+      var currentScrollLeft = $(".scrollable-row").scrollLeft();
+      var cardWidth = $(".card").outerWidth(true);
+      var newScrollLeft = currentScrollLeft + cardWidth;
+
+      // Se já estiver no final, volte ao início
+      if (newScrollLeft > $(".scrollable-row")[0].scrollWidth - $(".scrollable-row").width()) {
+        newScrollLeft = 0;
+      }
+
+      // Faça a rotação suavemente usando animate
+      $(".scrollable-row").animate({
+        scrollLeft: newScrollLeft
+      }, 1000); // Ajuste o tempo de animação conforme necessário
+    }, 2000); // Intervalo de 2 segundos
+  });
+
+

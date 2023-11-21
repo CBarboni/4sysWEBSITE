@@ -66,6 +66,7 @@ body{
   /* position: absolute; */
   bottom: 0;
   width: 100%;
+  margin-top: 100px;
 }
 
 /* Estilo para os ícones sociais no footer */
@@ -82,15 +83,31 @@ body{
 
 /* Estilo para os links no hover no footer */
 .footer a:hover {
-  text-decoration: underline;
+  /* text-decoration: underline; */
+  color: #e02e2e;;
+}
+
+.social-icon:hover {
+  
+  color: #e02e2e;; /* Adapte a cor do ícone conforme necessário */
+  
 }
 
 
 /********************************CONTAINER*********************/
 
 /* Estilo personalizado para o carrossel */
+.btn{
+  background-color: #e02e2e;
+  border: #ffffff;
+}
+.btn:hover{
+  background-color: #a83131;
+}
+
 #carouselExampleCaptions{
     margin-top: 180px;
+    margin-bottom: 50px;
 }
 
 .carousel-caption {
@@ -154,19 +171,43 @@ body{
 
   /********************CLIENTES*******************/
 
-
-  .owl-carousel {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  .text-center{
+    margin-bottom: 30px;
   }
 
-  .owl-item {
-    display: flex;
-    justify-content: center;
+  .scrollable-row {
+    /* overflow-x: auto; */
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
   }
 
-  .owl-item img {
-    max-width: 100%;
+  .scrollable-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 8s linear infinite; /* Ajuste o tempo de animação conforme necessário */
   }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .scrollable-row .card {
+    display: inline-block;
+    width: 18rem; /* Ajuste a largura conforme necessário */
+    margin-right: 15px; /* Adicione margem entre os cards */
+  }
+
+  @media (max-width: 576px) {
+    .scrollable-row .card {
+      width: 100%; /* Em telas menores, ajuste a largura para ocupar 100% da largura disponível */
+      margin-right: 0; /* Remova a margem lateral */
+    }
+  }
+
 
