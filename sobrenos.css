@@ -1,0 +1,94 @@
+/* main.css */
+
+/**************************************BODY********************************/
+
+body{
+    background-image: url('/imagens/rm222batch5-mind-27.jpg');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o navbar */
+.navbar {
+    width: 100%;
+    background-image: url('imagens/navcortada.jpeg');
+    background-color: #ffffff; /* Adapte a cor de fundo conforme necessário */
+    padding: 15px; /* Adapte o espaçamento interno conforme necessário */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+  }
+
+  /* Estilo padrão para telas grandes */
+.navbar-nav .nav-link {
+    color: #ffffff; /* branco */
+    font-weight: bold;
+  }
+  
+  /* Estilo para telas menores (mobile) */
+  @media (max-width: 767px) {
+    .navbar-nav .nav-link {
+      color: #000000; /* branco */
+      font-weight: normal; /* ou qualquer outro estilo desejado para telas menores */
+    }
+  }
+  
+  
+  /* Estilo para o logotipo (opcional, ajuste conforme necessário) */
+  .logoinicial {
+    max-height: 50px; /* Adapte a altura máxima conforme necessário */
+  }
+  
+  /* Estilo para o texto principal abaixo do navbar (ajuste conforme necessário) */
+  .texto-principal {
+    margin-top: 70px; /* Ajuste o valor conforme necessário para evitar sobreposição com o navbar */
+  }
+
+
+
+
+  /**************************************FOOTER****************************/
+
+
+  
+  /* Adicione ao seu arquivo main.css ou ajuste conforme necessário */
+
+/* Estilo para o footer */
+/* Adicione ao seu arquivo main.css ou ajuste conforme necessário */
+
+/* Estilo para o footer */
+.footer {
+  background-color: #333; /* Adapte a cor de fundo conforme necessário */
+  color: #fff; /* Adapte a cor do texto conforme necessário */
+  padding: 30px 0;
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+  margin-top: 100px;
+}
+
+/* Estilo para os ícones sociais no footer */
+.social-icon {
+  font-size: 24px;
+  color: #fff; /* Adapte a cor do ícone conforme necessário */
+  margin-right: 10px;
+}
+
+/* Estilo para os links no footer */
+.footer a {
+  color: #fff; /* Adapte a cor do link conforme necessário */
+}
+
+/* Estilo para os links no hover no footer */
+.footer a:hover {
+  /* text-decoration: underline; */
+  color: #e02e2e;;
+}
+
+.social-icon:hover {
+  
+  color: #e02e2e;; /* Adapte a cor do ícone conforme necessário */
+  
+}

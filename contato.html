@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>4Sys</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+  <script src="index.js"></script>
+  <link href="contato.css" rel="stylesheet" type="text/css">
+</head>
+<body class="pagina1">
+
+<nav class="navbar navbar-expand-md fixed-top">
+  <a href="index.html">
+    <img src="imagens/logo-4sys-sistemas.png" class="logoinicial" alt="Logo">
+  </a>
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a href="index.html" class="nav-link paginainicial">Página Inicial</a>
+      </li>
+      <li class="nav-item">
+        <a href="contato.html" class="nav-link contato">Contato</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownEmpresa" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Empresa
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownEmpresa">
+          <a class="dropdown-item" href="sobrenos.html">Sobre Nós</a>
+          <a class="dropdown-item" href="#">Clientes</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownProdutos" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Produtos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdownProdutos">
+          <a class="dropdown-item" href="#">Cleber</a>
+          <a class="dropdown-item" href="#">Gleison</a>
+          <a class="dropdown-item" href="#">opcao3</a>
+        </div>
+      </li>
+      <li class="nav-item">
+        <a href="contato.html" class="nav-link contato">Serviços</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+
+      <!-- Formulário permanece inalterado a partir do código anterior -->
+      <div class="primeirotexto">
+      <div class="col-md-6 offset-md-3 text-center">
+        <b class="mb-2">Fale conosco</b>
+        <h2 class="mb-2">Tem um projeto em mente?</h2>
+        <p class="mb-4">Vamos conversar.</p>
+      </div>
+    </div>
+
+
+<!-- Adicione este trecho antes do formulário -->
+<div class="container mt-5">
+    <div class="row">
+  
+      <!-- Card 1 -->
+      <div class="col-md-4 mb-4">
+        <div class="card text-center">
+          <img src="/imagens/contato/hid-icon-133.png" class="card-img-top mx-auto" style="width: 30px;" alt="Imagem 1">
+          <div class="card-body">
+            <h5 class="card-title">Endereço</h5>
+            <p class="card-text">Rua guarani, 123, Indaiatuba-SP</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 2 -->
+      <div class="col-md-4 mb-4">
+        <div class="card text-center">
+          <img src="/imagens/contato/hid-icon-134.png" style="width: 30px;" class="card-img-top mx-auto" alt="Imagem 2">
+          <div class="card-body">
+            <h5 class="card-title">E-mail</h5>
+            <p class="card-text">atendimento@4syssistemas.com.br</p>
+          </div>
+        </div>
+      </div>
+  
+      <!-- Card 3 -->
+      <div class="col-md-4 mb-4">
+        <div class="card text-center">
+          <img src="/imagens/contato/hid-icon-135.png" style="width: 30px;" class="card-img-top mx-auto" alt="Imagem 3">
+          <div class="card-body">
+            <h5 class="card-title">Informações de Contato</h5>
+            <p class="card-text">19 99631-2104</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  
+
+
+
+<div class="container mt-5">
+    <div class="row">
+      <div class="col-md-6 offset-md-3">
+        <b class="mb-2">Envie sua mensagem</b>
+        <p class="mb-2">Preencha o formulário com as informações da sua necessidade, que entraremos em contato. Será um prazer atendê-lo.</p>
+        <form>
+          <div class="mb-3">
+            <label for="nome" class="form-label">Nome:</label>
+            <input type="text" class="form-control" id="nome" name="nome" required>
+          </div>
+          <div class="mb-3">
+            <label for="telefone" class="form-label">Telefone:</label>
+            <input type="tel" class="form-control" id="telefone" name="telefone" required>
+          </div>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email:</label>
+            <input type="email" class="form-control" id="email" name="email" required>
+          </div>
+          <div class="mb-3">
+            <label for="assunto" class="form-label">Assunto:</label>
+            <input type="text" class="form-control" id="assunto" name="assunto" required>
+          </div>
+          <div class="mb-3">
+            <label for="mensagem" class="form-label">Mensagem:</label>
+            <textarea class="form-control" id="mensagem" name="mensagem" rows="4" required></textarea>
+          </div>
+          <div class="text-center">
+            <button type="submit" class="btn btn-primary">Enviar</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+
+
+<!-- Adicione esta parte no final do corpo da sua página -->
+<footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h5>Siga-nos:</h5>
+          <a href="#" class="social-icon"><i class="bi bi-linkedin"></i></a>
+          <a href="#" class="social-icon"><i class="bi bi-instagram"></i></a>
+        </div>
+        <div class="col-md-6">
+          <h5>Contato:</h5>
+          <p><i class="bi bi-telephone"></i> 1999999-9999</p>
+          <p><i class="bi bi-envelope"></i> atendimento@4syssistemas.com.br</p>
+        </div>
+        <div class="col-md-6">
+            <img src="/imagens/logo-4sys-sistemas-white.png" alt="logofooter">
+          </div>
+      </div>
+      <hr>
+      <div class="row">
+        <div class="col-md-12">
+          <p><a href="#">Termos e Condições</a> | <a href="#">Política de Privacidade</a> | <a href="">4Sys - Automação Industrial Indaiatuba © 2023 Todos os direitos reservados</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+
+
+
+
+   </body>
+   
+   </html>
+   
