@@ -99,12 +99,18 @@ body{
 
 .gallery-container {
     margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; /* Isso garante que o contêiner ocupa pelo menos a altura da tela */
   }
   
   .card {
     position: relative;
+    margin-bottom: 20px;
+    max-width: 400px; /* Defina a largura máxima desejada para os cards */
+    margin: 0 auto; /* Isso centralizará os cards na tela */
     margin-bottom: 40px;
-    max-width: 70%;
   }
   
   .card-overlay {
@@ -121,5 +127,19 @@ body{
   
   .card img {
     border-radius: 8px;
+    max-width: 100%; /* Isso garante que a imagem não ultrapasse os limites do card */
+    transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
   }
-  
+
+  .card-overlay p {
+    font-weight: bold;
+    font-size: 18px;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .card:hover img {
+    transform: scale(1.1); /* Ajuste o fator de escala conforme desejado */
+  filter: brightness(50%);
+  }
+
+ 
