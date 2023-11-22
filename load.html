@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wrapper Page</title>
+  <!-- Adicione estilos CSS para a página de carregamento, se necessário -->
+
+  <style>
+    #loading-screen {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #e02e2e; /* Fundo vermelho */
+      z-index: 9999; /* Z-index alto para garantir que esteja acima de outros elementos */
+      color: #ffffff; /* Cor do texto branco */
+    }
+
+    #loading-spinner {
+      border: 8px solid #ffffff; /* Borda branca para o spinner */
+      border-top: 8px solid transparent; /* Topo transparente para criar um efeito de spinner */
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      animation: spin 1s linear infinite;
+      margin-bottom: 20px;
+    }
+    @keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+    #loading-text {
+      font-size: 24px; /* Tamanho do texto */
+    }
+  </style>
+</head>
+<body>
+
+  <div id="loading-screen">
+    <div id="loading-spinner"></div>
+    <div id="loading-text"></div>
+  </div>
+
+  <script>
+    // Função para redirecionar para a próxima página após um atraso
+    function redirecionarParaProximaPagina() {
+      window.location.href = 'pagina1.html'; // Substitua pelo nome da sua próxima página
+    }
+
+    // Atualiza o texto a cada segundo
+    let segundos = 0;
+    setInterval(function () {
+      const letras = ['4', 'S', 'Y', 'S'];
+      document.getElementById('loading-text').innerText += letras[segundos % letras.length];
+      segundos++;
+    }, 1000);
+
+    // Chame a função após o tempo desejado (4 segundos no exemplo)
+    setTimeout(redirecionarParaProximaPagina, 4000); // 4000 milissegundos (4 segundos)
+  </script>
+
+  <!-- Seus outros elementos head aqui -->
+</body>
+</html>
