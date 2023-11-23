@@ -311,8 +311,8 @@ body{
   
   /* Estilo para as imagens */
   .faixa-branca img {
-    width: 100%; /* Ocupa 100% da largura do contêiner pai */
-    max-width: 300px; /* Define um tamanho máximo para as imagens */
+    width: 500px; /* Ocupa 100% da largura do contêiner pai */
+    /* Define um tamanho máximo para as imagens */
     height: auto;
   }
   
