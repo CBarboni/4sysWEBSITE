@@ -35,6 +35,11 @@ body{
     }
   }
   
+  @media (max-width: 767px) {
+    .content-right {
+      display: none;
+    }
+  }
   
   /* Estilo para o logotipo (opcional, ajuste conforme necessário) */
   .logoinicial {
