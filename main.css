@@ -9,6 +9,7 @@ body{
     background-position: center;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* Estilo para o navbar */
@@ -128,13 +129,7 @@ body{
     height: auto; /* Garante que a altura seja ajustada automaticamente para manter a proporção original */
   }
   
-  /* Estilo para esconder o texto do carrossel em telas menores */
-  @media (max-width: 768px) {
-    .carousel-caption {
-      display: none;
-    }
-  }
-  
+
 
 
 /*****************************CARDS**********************/
@@ -257,3 +252,20 @@ body{
   .titulodocartao{
     color: white;
   }
+
+  @media (max-width: 767px) {
+    #carouselExampleCaptions {
+      display: none;
+    }
+    .feature-one{
+      margin-top: 90px;
+    }
+  }
+    /* .carousel-caption {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 100%;
+      text-align: center;
+    }
+  } */
