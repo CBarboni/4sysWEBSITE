@@ -98,7 +98,7 @@ body{
 
 /* Estilo personalizado para o carrossel */
 .btn{
-  background-color: #e02e2e;
+  background-color: #810001;
   border: #ffffff;
 }
 .btn:hover{
@@ -211,3 +211,49 @@ body{
   }
 
 
+
+
+  .faixa-vermelha{
+    background: #810001;
+  }
+  
+  .faixa-vermelha p {
+    color: #FFFFFF;
+    opacity: 0.7;
+  }
+  
+  .service-block-11 .inner-box .icon-box:before {
+      background: #b3000e;
+  }
+  
+  .service-block-11 .inner-box .icon-box{
+    background: #eff4fb;
+  }
+  
+  
+  .service-block-11 .inner-box .icon-box:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    transform: scale(0,0);
+    border-radius: 50%;
+    transition: all 500ms ease;
+  }
+  
+
+  .faixa-vermelha{
+    padding: 65px 0px 40px 0px;
+    margin-bottom: 80px;
+  }
+
+  .fundoicone{
+    background-color: #810001;
+  }
+
+  .titulodocartao{
+    color: white;
+  }
