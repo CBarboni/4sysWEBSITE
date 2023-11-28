@@ -387,3 +387,49 @@ body{
   .imagem-descricao img {
     max-width: 100%; /* Ajusta a largura da imagem para ocupar o espaço disponível */
   }
+
+
+
+
+  @media (min-width:768px){
+    .img-fluid34{
+      display: none;
+    }
+  }
+  
+  
+  @media (max-width: 767px){
+  .table-sobreposta {
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    transform: none;
+    color: #fff;
+    border-collapse: collapse;
+    width: 30%;
+  }
+  
+  .texto-sobreposto {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Cor do texto */
+    text-align: center;
+  }
+    .imagem-fundo img{
+      height: 900px;
+    }
+    .img-fluid33{
+      display:none;
+    }
+  
+    .table-modulos {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 0 auto;
+    }
+    .tabela-container {
+      overflow-x: auto;
+    }
+  }

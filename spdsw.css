@@ -740,6 +740,10 @@ body{
       flex-wrap: wrap;
       justify-content: center;
     }
+
+    .img-fluid1{
+      width: 500px;
+    }
     
     .texto-direita1,
     .texto-direita2 {
@@ -836,5 +840,9 @@ body{
   
     .team-ten .feature-block {
       flex-direction: column; /* Empilha a imagem em cima do texto em telas menores */
+    }
+
+    .img-fluid1{
+      width: 330px;
     }
   }

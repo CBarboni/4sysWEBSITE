@@ -279,22 +279,7 @@ body{
     width: 1100px;
   }
 
-  .imagem-com-descricao {
-    margin: 20px 0; /* Espaçamento entre as imagens */
-  }
-  
-  /* Estilo para as imagens */
-  .imagem-com-descricao img {
-    width: 100%; /* Ocupa 100% da largura do contêiner pai */
-    max-width: 300px; /* Define um tamanho máximo para as imagens */
-    height: auto;
-  }
-  
-  /* Estilo para as descrições */
-  .imagem-com-descricao p {
-    margin-top: 10px;
-    color: #333; /* Cor do texto da descrição */
-  }
+
 
   .mecanica{
     width: 100%;
@@ -402,44 +387,31 @@ body{
     margin-bottom: 30px; /* Ajuste conforme necessário */
   }
   
-  /* Estilo para cada imagem com descrição */
   .imagem-com-descricao {
     position: relative;
-    cursor: pointer;
+    display: inline-block;
   }
-  
-  .imagem-com-descricao img {
+  .imagem-com-descricao img{
     width: 200px;
-    height: auto;
   }
-  .imagem-com-descricao img:hover {
-    width: 200px;
-    height: auto;
-    opacity: 50%;
-  }
-  
-  .descricao {
-    text-align: center;
-    margin-top: 10px; /* Ajuste conforme necessário */
-  }
-  
-  /* Estilo para o ícone de lupa */
   .lupa {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     opacity: 0;
-    font-size: 30px;
-    color: #fff;
-    transition: opacity 0.3s ease;
+    color: white;
+    font-size: 24px;
   }
-  
   .lupa:hover{
     color: red;
   }
-
-  /* Efeito ao passar o mouse sobre a imagem */
   .imagem-com-descricao:hover .lupa {
     opacity: 1;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+
+  .descricao{
+    text-decoration: none;
+    color: red;
   }

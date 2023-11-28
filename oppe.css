@@ -816,7 +816,9 @@ body{
       }
     height: auto;
   }
-  
+  .img-fluid1{
+    width: 500px;
+  }
   /* Estilo para .team-ten .text-left em telas maiores */
   .team-ten .text-left {
     text-align: left; /* Ajuste conforme necessário */
@@ -836,5 +838,8 @@ body{
   
     .team-ten .feature-block {
       flex-direction: column; /* Empilha a imagem em cima do texto em telas menores */
+    }
+    .img-fluid1{
+      width: 330px;
     }
   }
