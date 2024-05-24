@@ -1,0 +1,313 @@
+/* main.css */
+
+/**************************************BODY********************************/
+
+body{
+    background-image: url('/imagens/rm222batch5-mind-27.jpg');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilo para o navbar */
+.navbar {
+    width: 100%;
+    background-image: url('/imagens/navcortada.jpeg');
+    background-color: #ffffff; /* Adapte a cor de fundo conforme necessário */
+    padding: 15px; /* Adapte o espaçamento interno conforme necessário */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+  }
+
+  /* Estilo padrão para telas grandes */
+.navbar-nav .nav-link {
+    color: #ffffff; /* branco */
+    font-weight: bold;
+  }
+  
+  /* Estilo para telas menores (mobile) */
+  @media (max-width: 767px) {
+    .navbar-nav .nav-link {
+      color: #000000; /* branco */
+      font-weight: normal; /* ou qualquer outro estilo desejado para telas menores */
+    }
+  }
+  
+  
+  /* Estilo para o logotipo (opcional, ajuste conforme necessário) */
+  .logoinicial {
+    max-height: 50px; /* Adapte a altura máxima conforme necessário */
+  }
+  
+  /* Estilo para o texto principal abaixo do navbar (ajuste conforme necessário) */
+  .texto-principal {
+    margin-top: 70px; /* Ajuste o valor conforme necessário para evitar sobreposição com o navbar */
+  }
+
+
+
+
+  /**************************************FOOTER****************************/
+
+
+  
+  /* Adicione ao seu arquivo main.css ou ajuste conforme necessário */
+
+/* Estilo para o footer */
+/* Adicione ao seu arquivo main.css ou ajuste conforme necessário */
+
+/* Estilo para o footer */
+.footer {
+  background-color: #333; /* Adapte a cor de fundo conforme necessário */
+  color: #fff; /* Adapte a cor do texto conforme necessário */
+  padding: 30px 0;
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+  margin-top: 100px;
+}
+
+/* Estilo para os ícones sociais no footer */
+.social-icon {
+  font-size: 24px;
+  color: #fff; /* Adapte a cor do ícone conforme necessário */
+  margin-right: 10px;
+}
+
+/* Estilo para os links no footer */
+.footer a {
+  color: #fff; /* Adapte a cor do link conforme necessário */
+}
+
+/* Estilo para os links no hover no footer */
+.footer a:hover {
+  /* text-decoration: underline; */
+  color: #e02e2e;;
+}
+
+.social-icon:hover {
+  
+  color: #e02e2e;; /* Adapte a cor do ícone conforme necessário */
+  
+}
+
+
+/********************************CONTAINER*********************/
+
+/* Estilo personalizado para o carrossel */
+.btn{
+  background-color: #810001;
+  border: #ffffff;
+}
+.btn:hover{
+  background-color: #a83131;
+}
+
+#carouselExampleCaptions{
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.carousel-caption {
+    position: absolute;
+    left: -40%;
+    transform: translateX(-50%);
+    max-width: 600px; /* Ajuste conforme necessário para o tamanho desejado */
+    margin: auto;
+    top: 40%;
+    transform: translateY(-50%);
+  }
+
+  .carousel-inner img {
+    object-fit: cover; /* Ajuste conforme necessário - 'cover' mantém a proporção e cobre a área designada */
+    max-width: 100%; /* Limita a largura máxima da imagem a 100% do contêiner */
+    max-height: 400px; /* Ajuste conforme necessário para a altura máxima desejada */
+    width: auto; /* Garante que a largura seja ajustada automaticamente para manter a proporção original */
+    height: auto; /* Garante que a altura seja ajustada automaticamente para manter a proporção original */
+  }
+  
+
+
+
+/*****************************CARDS**********************/
+
+/* .container{
+    margin-bottom: 10px;
+} */
+
+.card {
+    height: 100%;
+    transition: transform 0.2s;
+  }
+
+  .card:hover {
+    transform: scale(1.05);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+  }
+
+  .card-img-top {
+    max-height: 100px; /* Ajuste a altura máxima da imagem do card conforme necessário */
+    object-fit: contain;
+    margin-top: 15px;
+  }
+
+  .card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 100%;
+  }
+
+
+  /********************CLIENTES*******************/
+
+  .text-center{
+    margin-bottom: 30px;
+  }
+
+  .scrollable-row {
+    /* overflow-x: auto; */
+    position: relative;
+    overflow: hidden;
+    white-space: nowrap;
+  }
+
+  .scrollable-content {
+    display: inline-block;
+    white-space: nowrap;
+    animation: scroll 8s linear infinite; /* Ajuste o tempo de animação conforme necessário */
+  }
+
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+  .scrollable-row .card {
+    display: inline-block;
+    width: 18rem; /* Ajuste a largura conforme necessário */
+    margin-right: 15px; /* Adicione margem entre os cards */
+  }
+
+  @media (max-width: 576px) {
+    .scrollable-row .card {
+      width: 100%; /* Em telas menores, ajuste a largura para ocupar 100% da largura disponível */
+      margin-right: 0; /* Remova a margem lateral */
+    }
+  }
+
+
+
+
+  .faixa-vermelha{
+    background: #810001;
+  }
+  
+  .faixa-vermelha p {
+    color: #FFFFFF;
+    opacity: 0.7;
+  }
+  
+  .service-block-11 .inner-box .icon-box:before {
+      background: #b3000e;
+  }
+  
+  .service-block-11 .inner-box .icon-box{
+    background: #eff4fb;
+  }
+  
+  
+  .service-block-11 .inner-box .icon-box:before{
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    transform: scale(0,0);
+    border-radius: 50%;
+    transition: all 500ms ease;
+  }
+  
+
+  .faixa-vermelha{
+    padding: 65px 0px 40px 0px;
+    margin-bottom: 80px;
+  }
+
+  .fundoicone{
+    background-color: #810001;
+  }
+
+  .titulodocartao{
+    color: white;
+  }
+
+  @media (max-width: 767px) {
+    #carouselExampleCaptions {
+      display: none;
+    }
+    .feature-one{
+      margin-top: 90px;
+    }
+  }
+    /* .carousel-caption {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+      max-width: 100%;
+      text-align: center;
+    }
+  } */
+
+
+
+
+
+/* wrapper loader */
+
+.loader-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader-image {
+  width: 50%; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 50%; /* Ajuste o tamanho da imagem conforme necessário */
+}
+
+.content {
+  display: none;
+}
+@media (max-width: 767px) {
+  .loader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  .loader-image {
+    width: 90%; /* Ajuste o tamanho da imagem conforme necessário */
+   /* Ajuste o tamanho da imagem conforme necessário */
+  }
+}

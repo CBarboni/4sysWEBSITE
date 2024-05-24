@@ -1,0 +1,218 @@
+/* main.css */
+
+/**************************************BODY********************************/
+
+body{
+    background-image: url('/imagens/rm222batch5-mind-27.jpg');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o navbar */
+.navbar {
+    width: 100%;
+    background-image: url('/imagens/navcortada.jpeg');
+    background-color: #ffffff; /* Adapte a cor de fundo conforme necessário */
+    padding: 15px; /* Adapte o espaçamento interno conforme necessário */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+  }
+
+  /* Estilo padrão para telas grandes */
+.navbar-nav .nav-link {
+    color: #ffffff; /* branco */
+    font-weight: bold;
+  }
+  
+  /* Estilo para telas menores (mobile) */
+  @media (max-width: 767px) {
+    .navbar-nav .nav-link {
+      color: #000000; /* branco */
+      font-weight: normal; /* ou qualquer outro estilo desejado para telas menores */
+    }
+  }
+  
+  
+  /* Estilo para o logotipo (opcional, ajuste conforme necessário) */
+  .logoinicial {
+    max-height: 50px; /* Adapte a altura máxima conforme necessário */
+  }
+  
+  /* Estilo para o texto principal abaixo do navbar (ajuste conforme necessário) */
+  .texto-principal {
+    margin-top: 70px; /* Ajuste o valor conforme necessário para evitar sobreposição com o navbar */
+  }
+
+
+
+
+  /**************************************FOOTER****************************/
+
+
+  
+  /* Adicione ao seu arquivo main.css ou ajuste conforme necessário */
+
+/* Estilo para o footer */
+/* Adicione ao seu arquivo main.css ou ajuste conforme necessário */
+
+/* Estilo para o footer */
+.footer {
+  background-color: #333; /* Adapte a cor de fundo conforme necessário */
+  color: #fff; /* Adapte a cor do texto conforme necessário */
+  padding: 30px 0;
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+  margin-top: 100px;
+}
+
+/* Estilo para os ícones sociais no footer */
+.social-icon {
+  font-size: 24px;
+  color: #fff; /* Adapte a cor do ícone conforme necessário */
+  margin-right: 10px;
+}
+
+/* Estilo para os links no footer */
+.footer a {
+  color: #fff; /* Adapte a cor do link conforme necessário */
+}
+
+/* Estilo para os links no hover no footer */
+.footer a:hover {
+  /* text-decoration: underline; */
+  color: #e02e2e;;
+}
+
+.social-icon:hover {
+  
+  color: #e02e2e;; /* Adapte a cor do ícone conforme necessário */
+  
+}
+
+.galeria-container {
+    margin-top: 50px;
+    margin-bottom: 110px;
+    display: flex; /* Usando flexbox para os cards */
+    flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha quando necessário */
+    justify-content: space-between; /* Distribui os cards igualmente ao longo do eixo principal (horizontal) */
+  }
+
+  .row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .galeria-card {
+    width: calc(33.33% - 20px); /* Define a largura dos cards para ocupar aproximadamente 1/3 do espaço disponível, com 20px de espaçamento entre eles */
+    margin-bottom: 20px; /* Adiciona espaçamento inferior entre os cards */
+  }
+
+
+  @media (max-width: 767px) {
+    .galeria-container {
+      margin-top: 50px; /* Ajuste conforme necessário para telas menores */
+      margin-bottom: 50px; /* Ajuste conforme necessário para telas menores */
+    }
+  }
+
+  .galeria-card {
+    margin: 0 10px;
+    max-width: 800px;
+    margin-top: 50px;
+  }
+
+  .card{
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+  }
+
+.btn{
+    background-color: #e02e2e;
+    border: #ffffff;
+}
+
+.btn:hover{
+    background-color: brown;
+}
+
+.card-img{
+    border-radius: 8px;
+    transition: filter 3.5s ease;
+}
+
+.card:hover img {
+    transform: scale(1.0); /* Ajuste o fator de escala conforme desejado */
+    transition: filter 1.0s ease;
+  filter: brightness(50%);
+  }
+
+.apresentacao{
+    margin-top: 200px;
+}
+
+.hero-section {
+  margin-top: 100px;
+  position: relative;
+  height: 300px; 
+  overflow: hidden;
+}
+
+.hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(30%); /* Efeito escuro */
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #fff; /* Cor do texto */
+}
+
+.hero-text h1 {
+  font-size: 50px; /* Ajuste conforme necessário */
+  margin: 0;
+}
+/* wrapper loader */
+.loader-wrapper {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.loader-image {
+  width: 50%; /* Ajuste o tamanho da imagem conforme necessário */
+  height: 50%; /* Ajuste o tamanho da imagem conforme necessário */
+}
+
+.content {
+  display: none;
+}
+@media (max-width: 767px) {
+  .loader-wrapper {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  .loader-image {
+    width: 90%; /* Ajuste o tamanho da imagem conforme necessário */
+   /* Ajuste o tamanho da imagem conforme necessário */
+  }
+}

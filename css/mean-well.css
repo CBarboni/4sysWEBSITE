@@ -1,0 +1,417 @@
+/* main.css */
+
+/**************************************BODY********************************/
+
+body{
+    background-image: url('/imagens/rm222batch5-mind-27.jpg');
+    background-size: cover;
+    background-color: rgba(255, 255, 255, 0.7);
+    background-position: center;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o navbar */
+.navbar {
+    width: 100%;
+    background-image: url('/imagens/navcortada.jpeg');
+    background-color: #ffffff; /* Adapte a cor de fundo conforme necessário */
+    padding: 15px; /* Adapte o espaçamento interno conforme necessário */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+    border-radius: 8px;
+  }
+
+  /* Estilo padrão para telas grandes */
+.navbar-nav .nav-link {
+    color: #ffffff; /* branco */
+    font-weight: bold;
+  }
+  
+  /* Estilo para telas menores (mobile) */
+  @media (max-width: 767px) {
+    .navbar-nav .nav-link {
+      color: #000000; /* branco */
+      font-weight: normal; /* ou qualquer outro estilo desejado para telas menores */
+    }
+  }
+  
+  
+  /* Estilo para o logotipo (opcional, ajuste conforme necessário) */
+  .logoinicial {
+    max-height: 50px; /* Adapte a altura máxima conforme necessário */
+  }
+  
+  /* Estilo para o texto principal abaixo do navbar (ajuste conforme necessário) */
+  .texto-principal {
+    margin-top: 70px; /* Ajuste o valor conforme necessário para evitar sobreposição com o navbar */
+  }
+
+
+
+
+  /**************************************FOOTER****************************/
+
+
+  
+  /* Adicione ao seu arquivo main.css ou ajuste conforme necessário */
+
+/* Estilo para o footer */
+/* Adicione ao seu arquivo main.css ou ajuste conforme necessário */
+
+/* Estilo para o footer */
+.footer {
+  background-color: #333; /* Adapte a cor de fundo conforme necessário */
+  color: #fff; /* Adapte a cor do texto conforme necessário */
+  padding: 30px 0;
+  /* position: absolute; */
+  bottom: 0;
+  width: 100%;
+  margin-top: 100px;
+}
+
+/* Estilo para os ícones sociais no footer */
+.social-icon {
+  font-size: 24px;
+  color: #fff; /* Adapte a cor do ícone conforme necessário */
+  margin-right: 10px;
+}
+
+/* Estilo para os links no footer */
+.footer a {
+  color: #fff; /* Adapte a cor do link conforme necessário */
+}
+
+/* Estilo para os links no hover no footer */
+.footer a:hover {
+  /* text-decoration: underline; */
+  color: #e02e2e;;
+}
+
+.social-icon:hover {
+  
+  color: #e02e2e;; /* Adapte a cor do ícone conforme necessário */
+  
+}
+
+
+
+.hero-section {
+    margin-top: 100px;
+    position: relative;
+    height: 300px; 
+    overflow: hidden;
+  }
+  
+  .hero-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    filter: brightness(30%); /* Efeito escuro */
+  }
+  
+  .hero-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff; /* Cor do texto */
+  }
+  
+  .hero-text h1 {
+    font-size: 50px; /* Ajuste conforme necessário */
+    margin: 0;
+  }
+
+
+  .informacoes-imagem {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+  }
+  
+
+  .opc1{
+    margin-bottom: 10px;
+  }
+
+
+  /* Estilo para a imagem de fundo */
+.imagem-fundo {
+    position: relative;
+  }
+  
+  .imagem-fundo img {
+    width: 100%;
+    height: auto;
+  }
+  
+  /* Estilo para o texto sobreposto */
+  .texto-sobreposto {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Cor do texto */
+    text-align: center;
+  }
+  
+  .table-sobreposta {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #fff; /* Cor do texto */
+    border-collapse: collapse;
+    width: 30%;
+  }
+  
+  .table-sobreposta th, .table-sobreposta td {
+    border: 1px solid #fff; /* Cor da borda da tabela */
+    padding: 8px;
+    text-align: center;
+  }
+  
+  .table-sobreposta th {
+    background-color: #33333300; /* Cor de fundo do cabeçalho */
+    color: #fff; /* Cor do texto do cabeçalho */
+  }
+
+  .segunda table th, .segunda table td {
+    border: 1px solid #fff; /* Cor da borda da tabela */
+    padding: 8px;
+    text-align: center;
+  }
+
+  .segundo-texto{
+    margin-top: 40px;
+    margin-bottom: 50px;
+  }
+
+  .legenda{
+    font-size: 11px;
+    margin-left: 10px;
+  }
+
+
+
+
+  .faixa {
+    position: relative;
+    background-color: #8f8f8f; /* Cor de fundo da faixa */
+    color: #fff; /* Cor do texto na faixa */
+    padding: 30px 0; /* Espaçamento interno na faixa */
+  }
+  
+  /* Estilo para o título na faixa */
+  .titulo-faixa h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilo para as imagens na faixa */
+  .imagens-faixa {
+    display: flex;
+    flex-wrap: wrap; /* Permite que as imagens se movam para a linha seguinte em telas menores */
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  /* Estilo para cada imagem e descrição */
+  .imagem-descricao {
+    text-align: center;
+    margin: 10px;
+  }
+  
+  .imagem-descricao img {
+    width: 100%; /* Ocupa 100% da largura do contêiner pai */
+    max-width: 400px; /* Define um tamanho máximo para as imagens */
+    height: auto;
+  }
+  
+  .imagem-descricao p {
+    margin-top: 10px;
+  }
+
+
+
+
+
+
+  #carouselExample {
+    margin: 20px auto; /* Centraliza o carrossel */
+    max-width: 1000px; /* Define uma largura máxima */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+    border-radius: 12px;
+  }
+  
+  /* Estilo para as imagens no carrossel */
+  .carousel-inner img {
+    width: 100%; /* Ocupa 100% da largura do contêiner pai */
+    height: auto;
+    border-radius: 12px;
+  }
+  
+  /* Estilo para os controles de navegação */
+  .carousel-control-prev, .carousel-control-next {
+    width: 5%; /* Define a largura dos controles */
+  }
+  
+  /* Estilo para os ícones dos controles */
+  .carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #333; /* Cor de fundo dos ícones */
+    border-radius: 50%; /* Borda arredondada */
+  }
+  
+  /* Estilo para o fundo ativo do indicador (pontos) */
+  .carousel-indicators .active {
+    background-color: #333; /* Cor de fundo ativa */
+  }
+
+
+  .dois:hover{
+    transform: scale(1.25);
+  }
+
+
+  .imagem-com-faixa{
+    width: 1100px;
+  }
+
+
+
+  .mecanica{
+    width: 100%;
+  }
+  
+  /* Estilo para a faixa branca */
+  .faixa-branca {
+    background-color: #fff; /* Cor de fundo branca */
+    padding: 20px; /* Espaçamento interno na faixa */
+    text-align: center; /* Centraliza o conteúdo na horizontal */
+    width: 100%; /* As faixas ocupam 100% da largura da coluna */
+    box-sizing: border-box; /* Inclui padding e border na largura total */
+    border-radius: 30px;
+
+  }
+  
+  /* Estilo para as imagens */
+  .faixa-branca img {
+    width: 30%; /* Ocupa 100% da largura do contêiner pai */
+     /* Define um tamanho máximo para as imagens */
+    height: auto;
+  }
+  
+  /* Estilo para as descrições */
+  .faixa-branca p {
+    margin-top: 10px;
+    color: #333; /* Cor do texto da descrição */
+  }
+
+
+
+  /************ULTIMA FAIXA*************/
+
+/* Adicione isso ao seu arquivo CSS personalizado */
+
+/* Estilo para a faixa abaixo das imagens */
+.outra-faixa {
+  margin-top: 50px;
+  background-color: #a8a8a8; /* Cor de fundo da faixa */
+  color: #fff; /* Cor do texto na faixa */
+  padding: 30px; /* Espaçamento interno na faixa */
+  text-align: center;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+}
+
+/* Estilo para o texto à esquerda */
+.texto-esquerda {
+  flex: 18%;
+  font-size: 20px;
+  margin-bottom: 40px;
+}
+
+/* Estilo para os textos e botões à direita */
+.texto-direita {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.texto-direita1,
+.texto-direita2 {
+  flex: 0 0 18%; /* Distribui os textos à direita em duas colunas */
+  margin: 0 1%; /* Espaçamento entre os textos à direita */
+
+  /* Estilo para telas menores (mobile) */
+  @media (max-width: 767px) {
+    flex: 0 0 100%; /* Em telas menores, ocupam 100% da largura */
+    margin: 10px 0; /* Espaçamento entre os textos à direita */
+  }
+}
+
+/* Estilo para os botões */
+.btn {
+  /* width: 100%; */
+  max-width: 200px; /* Define uma largura máxima para os botões */
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.7);
+
+}
+
+
+
+
+
+
+/* Estilo para a nova faixa */
+.nova-faixa {
+    text-align: center;
+    margin-top: 30px; /* Ajuste conforme necessário */
+  }
+  
+  /* Estilo para o título */
+  .nova-faixa h2 {
+    margin-bottom: 20px; /* Ajuste conforme necessário */
+  }
+  
+  /* Estilo para o container de imagens */
+  .imagens-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  /* Estilo para cada grupo de imagem */
+  .grupo-imagem {
+    margin-bottom: 30px; /* Ajuste conforme necessário */
+  }
+  
+  .imagem-com-descricao {
+    position: relative;
+    display: inline-block;
+  }
+  .imagem-com-descricao img{
+    width: 200px;
+  }
+  .lupa {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    color: white;
+    font-size: 24px;
+  }
+  .lupa:hover{
+    color: red;
+  }
+  .imagem-com-descricao:hover .lupa {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1.5);
+  }
+
+  .descricao{
+    text-decoration: none;
+    color: red;
+  }
