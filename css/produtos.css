@@ -96,9 +96,7 @@ body{
 .galeria-container {
     margin-top: 50px;
     margin-bottom: 110px;
-    display: flex; /* Usando flexbox para os cards */
     flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha quando necessário */
-    justify-content: space-between; /* Distribui os cards igualmente ao longo do eixo principal (horizontal) */
   }
 
   .row {
@@ -113,6 +111,19 @@ body{
 
 
   @media (max-width: 767px) {
+    .galeria-container {
+      margin-top: 50px;
+      margin-bottom: 110px;
+      flex-wrap: wrap; /* Permite que os cards quebrem para a próxima linha quando necessário */
+    }
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .galeria-card {
+      width: 100%;
+      margin-bottom: 20px; /* Adiciona espaçamento inferior entre os cards */
+    }
     .galeria-container {
       margin-top: 50px; /* Ajuste conforme necessário para telas menores */
       margin-bottom: 50px; /* Ajuste conforme necessário para telas menores */
